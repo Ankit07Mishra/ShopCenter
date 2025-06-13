@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopCenter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: end;
+            background-color: #444;
+            
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Product_Photography.jpg'); 
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+        .hero h1 {
+            font-size: 4em;
+        }
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 0;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .product p {
+            color: #777;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button 
+        {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        } 
+        button:hover 
+        {
+            background-color: #555;
+        } 
+        nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCenter</h1>
+        <p>BuyEveryThing!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Sale</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Discover the Best Deals</h1>
+        <p>Shop now and save big on your favorite products</p>
+    </section>
+
+    <section class="product-section">
+        <div class="product">
+            <img src="https://www.researchgate.net/publication/221362362/figure/fig2/AS:305566657335318@1449864176496/Sample-of-in-vitro-images-for-different-products.png" alt="Eatables">
+            <h3>Eatables</h3>
+            <p>$19.99</p>
+            <button>Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://www.shutterstock.com/image-photo/different-sport-equipment-on-green-260nw-2026207925.jpg" alt="Sports">
+            <h3>Sports Gear</h3>
+            <p>$29.99</p>
+            <button>Buy</button>
+        </div>
+        <div class="product">
+            <img src="https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg" alt="Clothing">
+            <h3>Clothing</h3>
+            <p>$39.99</p>
+            <button>Buy</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 ShopCenter. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

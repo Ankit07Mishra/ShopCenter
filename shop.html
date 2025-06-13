@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopCenter - Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: end;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+        .product button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        } 
+        nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ShopCenter</h1>
+        <p>Your one-stop shop for everything!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Sale</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="product-section">
+        <div class="product">
+            <img src="https://www.shutterstock.com/image-vector/illustration-cricket-bat-on-isolated-600nw-2452695663.jpg" alt="procut1">
+            <h3>Bat</h3>
+            <p>Cricketing Bat.</p>
+            <p class="price">$19.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51rCXKaVGTL._AC_UF894,1000_QL80_.jpg" alt="football">
+            <h3>Football</h3>
+            <p>High quality and durable football.</p>
+            <p class="price">$29.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?cs=srgb&dl=pexels-pixabay-47730.jpg&fm=jpg" alt="Product 3">
+            <h3>Football</h3>
+            <p>Long lasting football made of leather.</p>
+            <p class="price">$11.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://cdn.magicdecor.in/com/2024/05/22173454/Football-Abstract-Design-Wallpaper-Mural-710x488.jpg" alt="Product 4">
+            <h3>football</h3>
+            <p>Perfect for tech enthusiasts.</p>
+            <p class="price">$10.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://t3.ftcdn.net/jpg/03/10/62/12/360_F_310621281_foEqKBGtGlNWFQRePgdF5BpLOFyTsnzO.jpg" alt="Product 5">
+            <h3>Badminton</h3>
+            <p>For outdoor adventures.</p>
+            <p class="price">$25.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://t3.ftcdn.net/jpg/03/13/47/78/360_F_313477805_FjdtYLHA78oQBs4sYkPhVwNFDBotcCGi.jpg" alt="Product 6">
+            <h3>table tennis</h3>
+            <p>tennis and ball for table tennis.</p>
+            <p class="price">$15.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        <div class="product">
+            <img src="https://t4.ftcdn.net/jpg/09/21/71/67/360_F_921716789_ehEveeDlcIr9t43XQJ6I7xHjZZ8j1Y3l.jpg" alt="Product 7">
+            <h3>Hockey</h3>
+            <p>Play as much you want tasks.</p>
+            <p class="price">$79.99</p>
+           <form action="buy.php" method="post">
+    <input type="hidden" name="product" value="ProductName">
+    <button type="submit">Buy</button>
+</form>
+        </div>
+        
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 ShopCenter. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
