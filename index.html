@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopCenter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to ShopCenter</h1>
+    <p>Your one-stop shop for everything!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Sale</a>
+    <a href="login.html">Login</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/65/Product_Photography.jpg')">
+    <h1>Discover the Best Deals</h1>
+    <p>Shop now and save big on your favorite products</p>
+    <a href="shop.html" class="btn">🛒 Start Shopping</a>
+
+    <div class="hero-highlights">
+      <span>✔ Free Delivery</span>
+      <span>✔ Secure Payments</span>
+      <span>✔ 24/7 Support</span>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="product-section">
+    <div class="product">
+      <img src="https://www.researchgate.net/publication/221362362/figure/fig2/AS:305566657335318@1449864176496/Sample-of-in-vitro-images-for-different-products.png" alt="Eatables">
+      <h3>Eatables</h3>
+      <p class="price">$19.99</p>
+      <form action="buy.php" method="post">
+        <input type="hidden" name="product" value="Eatables">
+        <button type="submit">Buy</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <img src="https://www.shutterstock.com/image-photo/different-sport-equipment-on-green-260nw-2026207925.jpg" alt="Sports Gear">
+      <h3>Sports Gear</h3>
+      <p class="price">$29.99</p>
+      <form action="buy.php" method="post">
+        <input type="hidden" name="product" value="Sports Gear">
+        <button type="submit">Buy</button>
+      </form>
+    </div>
+
+    <div class="product">
+      <img src="https://t3.ftcdn.net/jpg/03/34/79/68/360_F_334796865_VVTjg49nbLgQPG6rgKDjVqSb5XUhBVsW.jpg" alt="Clothing">
+      <h3>Clothing</h3>
+      <p class="price">$39.99</p>
+      <form action="buy.php" method="post">
+        <input type="hidden" name="product" value="Clothing">
+        <button type="submit">Buy</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ShopCenter. All rights reserved.</p>
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+    </div>
+  </footer>
+
+</body>
+</html>
